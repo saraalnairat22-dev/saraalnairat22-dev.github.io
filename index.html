@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b8bde5">
+  <title>Sara Alnairat | AI & Robotics</title>
+  <style>
+    :root { --ink:#29294a; --purple:#666da9; --glass:rgba(250,248,255,.79); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0; color:var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background:#b8bde5;
+    }
+    .hero {
+      min-height:100vh; position:relative; isolation:isolate; overflow:hidden;
+      display:flex; align-items:flex-start; justify-content:center;
+      padding:clamp(24px,5vw,64px) 20px 48px;
+      background-image:linear-gradient(180deg,rgba(236,235,255,.24),rgba(236,235,255,.06)),url("github-banner.png");
+      background-size:cover; background-position:center center;
+    }
+    .intro {
+      width:min(780px,100%); margin-top:clamp(12px,4vh,52px);
+      text-align:center; padding:clamp(22px,4vw,40px);
+      border:1px solid rgba(255,255,255,.8); border-radius:28px;
+      background:var(--glass); backdrop-filter:blur(7px);
+      box-shadow:0 16px 45px rgba(50,48,95,.12);
+    }
+    .eyebrow { letter-spacing:.16em; text-transform:uppercase; font-size:.78rem; font-weight:750; color:#656ba5; }
+    h1 { font-size:clamp(2.25rem,7vw,4.7rem); line-height:1.05; margin:12px 0; letter-spacing:-.045em; }
+    .subtitle { font-size:clamp(1rem,2.4vw,1.3rem); line-height:1.7; margin:0 auto; max-width:620px; }
+    .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:9px; margin:22px 0; }
+    .chip { background:#e8e7fb; color:#4d528b; border:1px solid #d5d4f1; padding:8px 13px; border-radius:999px; font-size:.9rem; }
+    .buttons { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:20px; }
+    .btn { display:inline-block; text-decoration:none; color:white; background:#666da9; padding:12px 19px; border-radius:14px; font-weight:700; box-shadow:0 6px 16px #555d9828; }
+    .btn.secondary { color:#50558c; background:#fff; border:1px solid #d8d8f2; }
+    main { background:#f8f7ff; padding:44px 18px 54px; }
+    .section { width:min(900px,100%); margin:0 auto 28px; padding:clamp(22px,4vw,34px); border-radius:24px; background:white; border:1px solid #e7e5fa; box-shadow:0 10px 28px #4947750c; }
+    h2 { margin:0 0 12px; color:#565c98; font-size:1.55rem; }
+    p { line-height:1.75; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; }
+    .project { border-radius:17px; padding:18px; background:#f2f0ff; border:1px solid #e3e0fb; }
+    .project h3 { margin:0 0 8px; font-size:1.05rem; }
+    .project p { margin:0; font-size:.94rem; }
+    footer { text-align:center; padding:26px 16px 36px; background:#f8f7ff; color:#66668e; }
+    a:focus-visible { outline:3px solid #8c91d3; outline-offset:3px; }
+    @media(max-width:600px) {
+      .hero { min-height:92vh; background-position:47% center; padding:18px 12px 34px; }
+      .intro { margin-top:12px; padding:22px 16px; border-radius:22px; }
+      .subtitle { line-height:1.55; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="intro">
+      <div class="eyebrow">AI • Robotics • Research</div>
+      <h1>Hi, I'm Sara ♡</h1>
+      <p class="subtitle">Artificial Intelligence student who loves turning ideas into meaningful projects — learning, building, and creating technology for a better future.</p>
+      <div class="chips">
+        <span class="chip">Machine Learning</span>
+        <span class="chip">Robotics</span>
+        <span class="chip">Data Science</span>
+        <span class="chip">AI for Good</span>
+      </div>
+      <div class="buttons">
+        <a class="btn" href="#projects">Explore my projects ↓</a>
+        <a class="btn secondary" href="https://github.com/" target="_blank" rel="noopener">My GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2>✦ A little about me</h2>
+      <p>I'm an Artificial Intelligence student at Al-Zaytoonah University of Jordan. I'm growing my skills through hands-on projects, robotics, and continuous learning. I enjoy collaborating with others and exploring how AI can help solve real-world problems.</p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>✦ Things I'm building</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>🧠 NeuroAssist AI</h3>
+          <p>Exploring movement analysis and tracking changes over time to support Parkinson's research. A research prototype, not a diagnostic tool.</p>
+        </article>
+        <article class="project">
+          <h3>🤖 Robotics & Sumo</h3>
+          <p>Learning through hands-on Arduino robotics, sensors, motor drivers, wiring, and control logic.</p>
+        </article>
+        <article class="project">
+          <h3>📊 Machine Learning</h3>
+          <p>Building practical ML projects, exploring datasets, evaluating models, and improving my coding skills step by step.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="goals">
+      <h2>✦ My direction</h2>
+      <p>Learn deeply. Build responsibly. Share what I learn. Keep creating technology that makes a positive difference.</p>
+      <p><strong>Code • Learn • Innovate for a Better Future ♡</strong></p>
+    </section>
+  </main>
+  <footer>Made with curiosity and a little lavender magic ✨</footer>
+</body>
+</html>
